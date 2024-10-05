@@ -1,0 +1,215 @@
+body {
+    margin: 0; /* إزالة الهوامش الافتراضية */
+     /* يمكنك استخدام خط عربي مزخرف هنا */
+   position: relative; /* لجعل الخلفية في الوضع الصحيح */
+
+    
+}
+
+
+
+
+.header1 {
+    background-color: #111; /* لون خلفية داكن */
+    color: white; /* لون النص */
+    padding: 10px 20px; /* مساحة داخلية للهيدر */
+    position: fixed; /* لجعل الهيدر ثابتًا في أعلى الصفحة */
+    top: 0; /* جعله في الأعلى تمامًا */
+    width : 100% ; /* عرض الهيدر يغطي الصفحة كاملة */
+    display: flex; /* استخدام flexbox لتنظيم العناصر */
+    align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+    justify-content: space-between; /* توزيع العناصر بين الأطراف */
+    width: 100vm;
+    height: 1vw;
+}
+
+/* أيقونة المنزل على اليمين */
+.icon1 {
+    width: 30px; /* عرض الأيقونات */
+    height: 30px; /* ارتفاع الأيقونات */
+    cursor: pointer; /* تغيير المؤشر عند التحويم */
+    margin-right: 23vw; /* دفع الأيقونة نحو اليمين */
+}
+
+/* أيقونة القائمة على اليسار */
+.icon2 {
+    width: 30px; /* عرض الأيقونات */
+    height: 30px; /* ارتفاع الأيقونات */
+    cursor: pointer; /* تغيير المؤشر عند التحويم */
+    margin-left: 250px; /* دفع الأيقونة نحو اليسار */
+}
+
+
+
+
+
+
+
+.top-image {
+    width: 100%; /* عرض الصورة 100% من عرض الصفحة */
+    height: auto; /* الحفاظ على نسبة الطول إلى العرض */
+    max-height: 500px; /* تحديد الحد الأقصى للارتفاع */
+    display: block;/*  إزالة الفجوة تحت الصورة */
+    /*margin: 0 auto;  توسيط الصورة */
+    
+  /*  margin: 55px auto 0;  إضافة مسافة علوية كافية لتجنب تداخل الصورة مع الهيدر */
+}
+
+
+.header {
+    background-color: rgba(0, 0, 0, 0.7); /* خلفية داكنة مع شفافية */
+    font-family: 'Reem Kufi', sans-serif;
+    color: white; /* لون النص */
+    text-align: center; /* توسيط النص */
+    padding: 20px 0; /* مساحة داخلية في الأعلى والأسفل */
+    font-size: 10px; /* حجم خط النص */
+    margin: 0; /* إزالة الهوامش */
+    position: relative; /* لجعلها تتداخل مع العناصر الأخرى */
+    z-index: 1; /* ليكون فوق الخلفية */
+}
+
+
+.header2 {
+    background-color : #38617D ;
+    height: 10px; /* ارتفاع الهيدر */
+    width: 100%; /* عرض الهيدر يغطي الصفحة بالكامل */
+    margin: 0 auto;
+    border-radius: 0px; /* تقويس الأطراف */
+    
+}
+
+
+#textb {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+
+#text {
+    display: flex;
+    font-family: 'Reem Kufi', sans-serif;
+    color : #111 ;
+        
+}
+#text2 {
+    display: flex;
+    font-family: 'Aref Ruqaa', serif;
+    color : #111 ;
+    padding-left: 70%;
+    
+}
+
+p {
+    direction: rtl;
+    font-family: 'Lalezar', cursive;
+    text-align: center;
+}
+
+#txt {
+    text-align: center;
+    font-family: 'Aref Ruqaa', serif;
+}
+
+ol {
+    font-family: 'Lalezar', cursive;
+    text-align: center;
+    direction: rtl;
+}
+
+
+   
+
+
+
+
+
+#textt {
+    text-align: center;
+    padding-left : 6vw ;
+    font-family: 'Lalezar', cursive;
+    
+    
+}
+
+/*
+
+.clas {
+    padding-left : 6vw ;
+    
+}
+
+.had {
+    background-color: #38617D;
+    width: 100vm ;
+    height: 10px;
+    
+}
+
+*/
+
+
+#txt2 {
+    direction: rtl;
+    padding-left : 6vw ;
+    font-family: 'Aref Ruqaa Ink' , serif;
+}
+
+
+.clases {
+    
+    width: 100%;
+}
+
+#image {
+    
+    height: auto;
+    
+}
+
+
+.background {
+    position: fixed;  /* لجعل الخلفية ثابتة */
+    top: 0; /* وضعها في أعلى الصفحة */
+    left: 0; /* وضعها في الجهة اليسرى */
+    width: 100%; /* عرض 100% */
+    height: 100%; /* ارتفاع 100% */
+    background-image: url('image.png'); /* خلفية الصورة */
+    background-repeat: no-repeat; /* يمنع تكرار الصورة */
+    background-size: cover; /* تغطي الصورة الخلفية بالكامل */
+    filter: blur(5px); /* تطبيق التغبيش */
+    z-index: -1; /* لجعل الخلفية تحت العناصر الأخرى */
+}
+
+#txtx {
+    text-align: center;
+    font-family: 'Aref Ruqaa', serif;
+    padding-left: 6vw;
+    
+}
+
+
+.live {
+    
+    border: 8px solid black;
+    margin-left: 5% ;
+    margin-right: 5% ;
+}
+
+
+.dv {
+    border: 8px solid black;
+    margin-left: 5% ;
+    margin-right: 5% ;
+}
+
+#header3 {
+    
+}
+
+
+#txb {
+
+    font-family: 'Lalezar', cursive;
+    text-align: center;
+}
