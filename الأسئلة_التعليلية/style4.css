@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  background-color: #F5FFFA ;
+ ;
+}
+
+
+#header {
+  background-color: black; 
+  color : white ;
+  height: 5%;
+}
+
+#txt {
+  color : white;
+  text-align: center ;
+  font-family: 'Lalezar', cursive ;
+}
+.qu {
+  text-align: center;
+  border: 7px solid #2F4F4F;
+  margin: 2% ;
+  background-color: #D2B48C ;
+}
+#txt2 {
+  font-family: 'Aref Ruqaa', serif;
+}
+#txt3 {
+  font-family: 'Lalezar', cursive ;
+}
+.q {
+  text-align: center;
+  border: 7px solid #2F4F4F;
+  margin: 2% ;
+  background-color: #D2B48C ;
+  
+}
+
+#txt4 {
+  font-family: 'Lalezar', cursive ;
+  margin: 3% ;
+}
