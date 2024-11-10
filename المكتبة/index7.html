@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>المكتبة | موقع الدكتور نضال</title>
+
+        <!-- الروابط الخاصة بالخطوط -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Lalezar&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- ربط ملف CSS -->
+        <link rel="stylesheet" href="style7.css" />
+    </head>
+    <bode>
+        <header id="header">
+            <br>
+            <h1 id="txt">موقع الدكتور نضال ثلجي</h1>
+            <br>
+        </header>
+
+
+
+        <script>
+    function searchBooks() {
+        // جلب النص من مربع البحث
+        let query = document.getElementById("search-input").value.toLowerCase();
+
+        // جلب كل بطاقات الكتب
+        let books = document.querySelectorAll(".book-card");
+
+        // التكرار عبر كل بطاقة كتاب وإخفاء التي لا تحتوي على النص المدخل
+        let resultsFound = false; // متغير لتتبع وجود نتائج
+        books.forEach(function(book) {
+            let title = book.querySelector(".book-title").textContent.toLowerCase();
+            let description = book.querySelector(".book-description").textContent.toLowerCase();
+
+            // إظهار أو إخفاء الكتاب بناءً على مطابقة النص
+            if (title.includes(query) || description.includes(query)) {
+                book.style.display = "block"; // عرض الكتاب
+                resultsFound = true; // تم العثور على نتيجة
+            } else {
+                book.style.display = "none"; // إخفاء الكتاب
+            }
+        });
+
+        // إظهار أو إخفاء رسالة "لا توجد نتائج"
+        let noResultsMessage = document.getElementById("no-results");
+        if (resultsFound) {
+            noResultsMessage.style.display = "none"; // إخفاء الرسالة إذا كانت هناك نتائج
+        } else {
+            noResultsMessage.style.display = "block"; // إظهار الرسالة إذا لم توجد نتائج
+        }
+    }
+            </script>
+
+        
+
+        <div class="search-container">
+    <input type="text" id="search-input" placeholder="ابحث عن كتاب...">
+    <button onclick="searchBooks()">بحث</button>
+        </div>
+
+
+
+        <div id="no-results" style="display: none; color: red; font-size: 18px; text-align: center;">
+    لا توجد نتائج مطابقة للبحث.
+        </div>
+        
+
+        
+
+        <div class="book-card">
+  <img src="image/book-image.jpg" alt="تفسير القرآن العظيم" class="book-image">
+  <div class="book-info">
+    <h3 class="book-title">تفسير القرآن العظيم</h3>
+    <p class="book-author">المؤلف: ابن كثير</p>
+    <p class="book-type">النوع: تفسير</p>
+    <p class="book-description">
+      تفسير القرآن العظيم لابن كثير هو أحد أشهر كتب التفاسير. يتميز بالشرح الواضح والتفسير العميق للآيات، ويعد مرجعًا هامًا في تفسير القرآن الكريم.
+    </p>
+    <p class="book-publisher">الناشر: دار طيبة</p>
+    <p class="book-year">سنة النشر: 1999</p>
+    <a href="https://archive.org/download/20200104_20200104_0756/%D8%AA%D9%81%D8%B3%D9%8A%D8%B1%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20%D8%A7%D9%84%D8%B9%D8%B8%D9%8A%D9%85%20%D8%AA%D9%81%D8%B3%D9%8A%D8%B1%20%D8%A7%D8%A8%D9%86%20%D9%83%D8%AB%D9%8A%D8%B1.pdf" class="download-btn" target="_blank">تنزيل</a>
+  </div>
+        </div>
+
+
+        <br>
+        <div class="book-card">
+          <img src="image/book-image2.jpg" alt="صحيح البخاري" class="book-image">
+          <div class="book-info">
+            <h3 class="book-title">صحيح البخاري</h3>
+            <p class="book-author">المؤلف : الإمام البخاري</p>
+            <p class="book-type">النوع: حديث شريف</p>
+            <p class="book-description">
+             صحيح البخاري هو احد اشهر وابرز كتب الحديث النبوي الشريف ويعد المرجع الاهم في الحديث.
+            </p>
+            <p class="book-publisher">الناشر: دار ابن كثير</p>
+            <p class="book-year">سنة النشر: 2002</p>
+            <a href="https://archive.org/download/79565/79565.pdf" class="download-btn" target="_blank">تنزيل</a>
+          </div>
+                </div>
+
+
+
+
+        <br>
+        <div class="book-card">
+          <img src="image/book-image3.jpg" alt="صحيح مسلم" class="book-image">
+          <div class="book-info">
+            <h3 class="book-title">صحيح مسلم</h3>
+            <p class="book-author">المؤلف : أبو الحسين مسلم بن الحجاج بن مسلم</p>
+            <p class="book-type">النوع: حديث شريف</p>
+            <p class="book-description">
+             يعد هذا الكتاب ثاني اهم المراجع للحديث الشريف وكتب على يد الإمام مسلم تلميذ الإمام البخاري.
+            </p>
+            <p class="book-publisher">الناشر: بيت الأفكار الدولية</p>
+            <p class="book-year">سنة النشر: 1998</p>
+            <a href="https://archive.org/download/20230629_20230629_0835/%D8%B5%D8%AD%D9%8A%D8%AD%20%D9%85%D8%B3%D9%84%D9%85.pdf" class="download-btn" target="_blank">تنزيل</a>
+          </div>
+                </div>
+
+
+
+        <br>
+        <div class="book-card">
+          <img src="image/book-image4.jpg" alt="فقه السنة" class="book-image">
+          <div class="book-info">
+            <h3 class="book-title">فقه السنة </h3>
+            <p class="book-author">المؤلف : سيد سابق</p>
+            <p class="book-type">النوع: فقه</p>
+            <p class="book-description">
+                فقه السنة و من افضل الكتب الفقهية للمبتدئين في الفقه ويوفر العديد من اهم الاحكام التشريعية
+            </p>
+            <p class="book-publisher">الناشر: دار الحديث</p>
+            <p class="book-year">سنة النشر: 2004</p>
+            <a href="https://archive.org/download/20230629_20230629_1045/%D9%81%D9%82%D9%87%20%D8%A7%D9%84%D8%B3%D9%86%D8%A9.pdf" class="download-btn" target="_blank">تنزيل</a>
+          </div>
+                </div>
+
+
+
+        <br>
+        <div class="book-card">
+          <img src="image/book-image5.jpg" alt="كتاب التوحيد" class="book-image">
+          <div class="book-info">
+            <h3 class="book-title">كتاب التوحيد </h3>
+            <p class="book-author">المؤلف : محمد بن عبد الوهاب</p>
+            <p class="book-type">النوع: علم العقيدة</p>
+            <p class="book-description">
+                كتاب "التوحيد" للإمام محمد بن عبد الوهاب هو كتاب عقائدي يركز على شرح مفهوم التوحيد في الإسلام. يناقش الكتاب أنواع التوحيد الثلاثة (الربوبية، الألوهية، الأسماء والصفات) ويحث على إفراد العبادة لله وحده، محذرًا من الشرك بأنواعه. يُعد مرجعًا أساسيًا في فهم العقيدة الإسلامية وتأكيد التوحيد الخالص.
+
+            </p>
+            <p class="book-publisher">الناشر: مكتبة اهل الأثر</p>
+            <p class="book-year">سنة النشر: 2014</p>
+            <a href="https://archive.org/download/01282-pdf/01282%20%D9%83%D8%AA%D8%A7%D8%A8%20%20%20%20%20pdf%20%20%D8%A7%D9%84%D8%B4%D9%8A%D8%AE%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A8%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D9%88%D9%87%D8%A7%D8%A8%20%20%20%D9%83%D8%AA%D8%A7%D8%A8%20%D8%A7%D9%84%D8%AA%D9%88%D8%AD%D9%8A%D8%AF.pdf" class="download-btn" target="_blank">تنزيل</a>
+          </div>
+                </div>
+
+
+
+
+        <br>
+        <div class="book-card">
+          <img src="image/book-image6.jpg" alt="فتح الباري" class="book-image">
+          <div class="book-info">
+            <h3 class="book-title">فتح الباري في شرح صحيح البخاري ومقدمته (هدي الساري)</h3>
+            <p class="book-author">المؤلف : شهاب الدين احمد بن على بن حجر العسقلانى</p>
+            <p class="book-type">النوع: شرح حديثي</p>
+            <p class="book-description">
+                "فتح الباري" هو شرح لكتاب "صحيح البخاري" من تأليف الحافظ ابن حجر العسقلاني. يشرح فيه الأحاديث ويبين معانيها، ويقدم توضيحات لغوية، فقهية، ومصطلحية، بالإضافة إلى توثيق وتحليل للأسانيد. يُعد من أهم شروح "صحيح البخاري" وأكثرها شهرة في علم الحديث.
+            </p>
+            <p class="book-publisher">الناشر: مكتبة الملك فهد الوطنية</p>
+            <p class="book-year">سنة النشر: 2001</p>
+            <a href="https://archive.org/download/fathalbary/%D9%81%D8%AA%D8%AD%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B1%D9%8A.pdf" class="download-btn" target="_blank">تنزيل</a>
+          </div>
+                </div>
+
+
+
+
+        <br>
+        <div class="book-card">
+          <img src="image/book-image7.jpg" alt="الصارم المسلول" class="book-image">
+          <div class="book-info">
+            <h3 class="book-title">مختصر الصارم المسلول على شاتم الرسول</h3>
+            <p class="book-author">المؤلف : الإمام ابن تيمية</p>
+            <p class="book-type">النوع: شرح حديثي</p>
+            <p class="book-description">
+                "مختصر الصارم المسلول على شاتم الرسول" هو اختصار لكتاب "الصارم المسلول" الذي ألفه الإمام ابن تيمية. يتناول الكتاب الرد الحازم على من يسب أو يشتم النبي محمد صلى الله عليه وسلم، ويعرض الأدلة الشرعية من القرآن والسنة على وجوب تعظيم النبي وإثبات حرمة الطعن فيه. كما يتطرق إلى العقوبات الشرعية التي يجب أن تُنفذ ضد من يتعرض لشخصية النبي بالإهانة. الكتاب يعكس شدة ووضوح موقف ابن تيمية في الدفاع عن كرامة النبي صلى الله عليه وسلم.
+
+            </p>
+            <p class="book-publisher">الناشر: دار علم الفوائد</p>
+            <p class="book-year">سنة النشر: 2001</p>
+            <a href="https://archive.org/download/20201024_20201024_0519/%D9%85%D8%AE%D8%AA%D8%B5%D8%B1_%D8%A7%D9%84%D8%B5%D8%A7%D8%B1%D9%85_%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%88%D9%84_%D8%B9%D9%84%D9%89_%D8%B4%D8%A7%D8%AA%D9%85_%D8%A7%D9%84%D8%B1%D8%B3%D9%88%D9%84_.pdf" class="download-btn" target="_blank">تنزيل</a>
+          </div>
+                </div>
+
+
+
+
+        <br>
+        <div class="book-card">
+          <img src="image/book-image8.jpg" alt="رياض الصالحين" class="book-image">
+          <div class="book-info">
+            <h3 class="book-title">رياض الصالحين</h3>
+            <p class="book-author">المؤلف : الإمام النووي</p>
+            <p class="book-type">النوع: اخلاق وتزكية</p>
+            <p class="book-description">
+                "رياض الصالحين" هو كتاب جمعه الإمام النووي، يحتوي على مجموعة من الأحاديث النبوية التي تعزز الأخلاق الإسلامية وتعليم المسلم الآداب الحسنة في مختلف جوانب الحياة. يركز الكتاب على العبادة، المعاملات، والزهد، ويهدف إلى تهذيب النفس وتوجيه المسلم نحو العمل الصالح.
+
+            </p>
+            <p class="book-publisher">الناشر: مؤسسة الرسالة</p>
+            <p class="book-year">سنة النشر: 1984</p>
+            <a href="https://archive.org/download/154723/154723.pdf" class="download-btn" target="_blank">تنزيل</a>
+          </div>
+                </div>
+
+
+
+
+        
+        <br>
+        <div class="book-card">
+          <img src="image/book-image9.jpg" alt="زاد المعاد" class="book-image">
+          <div class="book-info">
+            <h3 class="book-title">زاد المعاد </h3>
+            <p class="book-author">المؤلف :  ابن القيم الجوزية</p>
+            <p class="book-type">النوع: سيرة نبوية</p>
+            <p class="book-description">
+                زاد المعاد في هدي خير العباد هو كتاب موسوعي لابن القيم، يسلط الضوء على حياة النبي محمد ﷺ وسيرته، ويستعرض توجيهاته وأخلاقه وعباداته في مختلف جوانب الحياة. يتميز الكتاب بأسلوب يجمع بين السيرة والفقه، حيث يستنبط ابن القيم الأحكام الفقهية من مواقف النبي ويقدمها كنموذج عملي. بالإضافة إلى ذلك، يحتوي الكتاب على جوانب من الطب النبوي والعلاقات الاجتماعية، مما يجعله دليلاً شاملاً في التربية والسلوك الإسلامي، ومرجعاً مفيداً للباحثين في السيرة والأخلاق.
+
+
+
+            </p>
+            <p class="book-publisher">الناشر: مؤسسة الرسالة</p>
+            <p class="book-year">سنة النشر: 2009</p>
+            <a href="https://archive.org/download/20240613_20240613_0609/%D8%B2%D8%A7%D8%AF%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%AF%20%D9%81%D9%8A%20%D9%87%D8%AF%D9%8A%20%D8%AE%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D8%A8%D8%A7%D8%AF%20%D9%84%D8%A5%D8%A8%D9%86%20%20%D9%82%D9%8A%D9%85%20%D8%A7%D9%84%D8%AC%D9%88%D8%B2%D9%8A%D8%A9.pdf" class="download-btn" target="_blank">تنزيل</a>
+          </div>
+                </div>
+
+
+
+        
+        
+    </bode>
+</html>

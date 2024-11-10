@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  background-color: white;
+ 
+}
+
+
+#header {
+  background-color: black; 
+  color : white ;
+  height: 5%;
+}
+
+#txt {
+  color : white;
+  text-align: center ;
+  font-family: 'Lalezar', cursive ;
+}
+
+
+
+/* تصميم مربع البحث */
+.search-container {
+    text-align: center;
+    margin: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: 2px solid #ccc; /* يمكن تغيير اللون هنا */
+    border-radius: 25px; /* تقوس الحواف */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#search-input:focus {
+    border-color: #4CAF50; /* لون الحدود عند التركيز */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* لون خلفية الزر */
+    color: white;
+    border: none;
+    border-radius: 25px; /* تقوس حواف الزر */
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* تغيير اللون عند التمرير فوق الزر */
+}
+
+/* تنسيق الكتاب بالكامل */
+.book-card {
+  width: 350px;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+/* التأثير عند التمرير */
+.book-card:hover {
+  transform: translateY(-10px);
+}
+
+/* صورة الكتاب */
+.book-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* تكبير الصورة عند التمرير */
+.book-card:hover .book-image {
+  transform: scale(1.05);
+}
+
+/* صورة الكتاب */
+.book-image {
+  width: 100%;
+  height: 300px;
+  object-fit: contain; /* هذا سيجعل الصورة تظهر بالكامل */
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* معلومات الكتاب */
+.book-info {
+  padding-top: 20px;
+  color: #333;
+}
+
+.book-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.book-author,
+.book-type,
+.book-publisher,
+.book-year {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 8px;
+}
+
+.book-description {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.book-description p {
+  margin-bottom: 0;
+}
+
+/* زر التنزيل */
+.download-btn {
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* تأثير عند التمرير على الزر */
+.download-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.download-btn:active {
+  background-color: #1f6691;
+}

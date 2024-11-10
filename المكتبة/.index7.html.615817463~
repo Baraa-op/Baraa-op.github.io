@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>المكتبة | موقع الدكتور نضال</title>
+
+        <!-- الروابط الخاصة بالخطوط -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Lalezar&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- ربط ملف CSS -->
+        <link rel="stylesheet" href="style7.css" />
+    </head>
+    <bode>
+        <header id="header">
+            <br>
+            <h1 id="txt">موقع الدكتور نضال ثلجي</h1>
+            <br>
+        </header>
+
+
+
+
+
+        <div class="book-card">
+  <img src="image/book-image.jpg" alt="تفسير القرآن العظيم" class="book-image">
+  <div class="book-info">
+    <h3 class="book-title">تفسير القرآن العظيم</h3>
+    <p class="book-author">المؤلف: ابن كثير</p>
+    <p class="book-type">النوع: تفسير</p>
+    <p class="book-description">
+      تفسير القرآن العظيم لابن كثير هو أحد أشهر كتب التفاسير. يتميز بالشرح الواضح والتفسير العميق للآيات، ويعد مرجعًا هامًا في تفسير القرآن الكريم.
+    </p>
+    <p class="book-publisher">الناشر: دار طيبة</p>
+    <p class="book-year">سنة النشر: 1999</p>
+    <a href="https://archive.org/download/20200104_20200104_0756/%D8%AA%D9%81%D8%B3%D9%8A%D8%B1%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20%D8%A7%D9%84%D8%B9%D8%B8%D9%8A%D9%85%20%D8%AA%D9%81%D8%B3%D9%8A%D8%B1%20%D8%A7%D8%A8%D9%86%20%D9%83%D8%AB%D9%8A%D8%B1.pdf" class="download-btn" target="_blank">تنزيل</a>
+  </div>
+        </div>
+
+
+        <br>
+        <div class="book-card">
+          <img src="image/book-image2.jpg" alt="صحيح البخاري" class="book-image">
+          <div class="book-info">
+            <h3 class="book-title">صحيح البخاري</h3>
+            <p class="book-author">المؤلف : الإمام البخاري</p>
+            <p class="book-type">النوع: حديث شريف</p>
+            <p class="book-description">
+             صحيح البخاري هو احد اشهر وابرز كتب الحديث النبوي الشريف ويعد المرجع الاهم في الحديث.
+            </p>
+            <p class="book-publisher">الناشر: دار ابن كثير</p>
+            <p class="book-year">سنة النشر: 1999</p>
+            <a href="https://archive.org/download/79565/79565.pdf" class="download-btn" target="_blank">تنزيل</a>
+          </div>
+                </div>
+
+
+
+
+        <br>
+        <div class="book-card">
+          <img src="image/book-image3.jpg" alt="صحيح مسلم" class="book-image">
+          <div class="book-info">
+            <h3 class="book-title">صحيح مسلم</h3>
+            <p class="book-author">المؤلف : أبو الحسين مسلم بن الحجاج بن مسلم</p>
+            <p class="book-type">النوع: حديث شريف</p>
+            <p class="book-description">
+             يعد هذا الكتاب ثاني اهم المراجع للحديث الشريف وكتب على يد الإما
+            </p>
+            <p class="book-publisher">الناشر: دار ابن كثير</p>
+            <p class="book-year">سنة النشر: 1999</p>
+            <a href="https://archive.org/download/79565/79565.pdf" class="download-btn" target="_blank">تنزيل</a>
+          </div>
+                </div>
+
+        
+    </bode>
+</html>

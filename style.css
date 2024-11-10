@@ -126,7 +126,7 @@ ol {
 
 #textt {
     text-align: center;
-    padding-left : 6vw ;
+   /* padding-left : 6vw ;*/
     font-family: 'Lalezar', cursive;
     
     
@@ -184,7 +184,7 @@ ol {
 #txtx {
     text-align: center;
     font-family: 'Aref Ruqaa', serif;
-    padding-left: 6vw;
+    
     
 }
 
@@ -212,4 +212,17 @@ ol {
 
     font-family: 'Lalezar', cursive;
     text-align: center;
+}
+
+.aqual {
+    border: 8px solid black;
+    margin-left: 5% ;
+    margin-right: 5% ;
+}
+
+#txa {
+    font-family: 'Lalezar', cursive;
+    text-align: center;
+    margin-left: 3% ;
+    margin-right: 3% ;
 }

@@ -1,0 +1,98 @@
+
+
+body {
+  margin: 0;
+  background-color : #0;
+  
+}
+
+
+#header {
+  background-color: black; 
+  color : white ;
+  height: 5%;
+}
+
+#txt {
+  color : white;
+  text-align: center ;
+  font-family: 'Lalezar', cursive ;
+}
+
+
+
+
+.main {
+  background-color : white;
+}
+
+#txt2 {
+  color : black;
+  text-align: center ;
+  font-family: 'Lalezar', cursive ;
+}
+
+
+
+/* تنسيق div الفتوى */
+.fatwa {
+    width: 100%;
+    max-width: 70%; /* تحديد الحد الأقصى للعرض */
+    margin: 0 auto; /* محاذاة العنصر في المنتصف */
+    padding: 20px;
+    background-color: #f8f8f8; /* بيج فاتح */
+    border: 2px solid #dcdcdc; /* تحديد حدود خفيفة باللون الرمادي الفاتح */
+    border-radius: 10px; /* إضافة حواف دائرية */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* إضافة تأثير الظل */
+}
+
+/* تنسيق العنوان (عنوان الفتوى) */
+.fatwa h2 {
+    text-align: center; /* محاذاة العنوان في المنتصف */
+    font-size: 24px;
+    color: #333333;
+}
+
+/* ملاحظات تحت العنوان */
+.fatwa .note,
+.fatwa .doctor-name {
+    font-size: 14px;
+    color: #555555;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* تنسيق الحقول (البريد الإلكتروني و النص) */
+.fatwa label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.fatwa input[type="email"],
+.fatwa textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* زر الإرسال */
+.fatwa button {
+    background-color: #007bff; /* لون زر الإرسال (أزرق) */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.fatwa button:hover {
+    background-color: #0056b3; /* تأثير hover على الزر */
+}
